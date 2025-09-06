@@ -1,0 +1,18 @@
+# Crear directorio para el backend
+mkdir quizing-backend
+cd quizing-backend
+
+# Inicializar proyecto Node.js
+npm init -y
+
+# Instalar dependencias principales
+npm install express mongoose cors dotenv bcryptjs jsonwebtoken
+npm install -D nodemon
+
+# Crear estructura de carpetas
+mkdir models routes controllers middleware config
+
+# Crear archivos principales
+touch server.js
+touch .env
+touch .gitignore

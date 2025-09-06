@@ -1,0 +1,22 @@
+# Volver al directorio principal y crear la app con Expo
+cd ..
+npx create-expo-app QuizIng --template
+
+# Seleccionar la plantilla (elige "blank (TypeScript)")
+# O usar directamente:
+npx create-expo-app QuizIng -t expo-template-blank-typescript
+
+# Navegar al directorio de la app
+cd QuizIng
+
+# Instalar dependencias adicionales necesarias
+npx expo install @react-navigation/native @react-navigation/stack
+npx expo install react-native-gesture-handler react-native-screens
+npx expo install @react-native-async-storage/async-storage
+npx expo install axios
+npx expo install @expo/vector-icons
+
+npx expo install react-dom react-native-web @expo/metro-runtime
+
+# Instalar dependencias para desarrollo
+npm install --save-dev @types/react @types/react-native
